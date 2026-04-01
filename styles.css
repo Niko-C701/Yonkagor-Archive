@@ -31,7 +31,7 @@
 body{
     margin: 0;
     font-family: sans-serif;
-    margin-bottom: 100vh;
+    margin-bottom: 100dvh;
 }
 body::selection{
     background-color: #333;
@@ -65,7 +65,7 @@ body::selection{
     position: fixed;
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    height: 100dvh;
     width: 100vw;
     z-index: -1;
     justify-content: center;
@@ -80,7 +80,7 @@ body::selection{
     background-size: cover;
     filter: brightness(.1);
     width: 100vw;
-    max-height: 100vh;
+    max-height: 100dvh;
     background-color: #000;
     aspect-ratio: 16 / 9;
     position: absolute;
@@ -295,7 +295,7 @@ h1{
     width: 100vw !important;
     background-color: var(--bg-color2);
     display: none !important;
-    height: 100vh;
+    height: 100dvh;
     z-index: 1000;
     right: 0;
     left: 0;
@@ -400,7 +400,7 @@ h1{
 /* ------- header end ------- */
 .provisional{
     position: relative;
-    top: 100vh;
+    top: 100dvh;
     height: 200vh;
     background-color: var(--bg-color);
     z-index: 100;
