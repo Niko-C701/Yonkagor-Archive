@@ -32,6 +32,7 @@ body{
     margin: 0;
     font-family: sans-serif;
     margin-bottom: 100dvh;
+    background-color: #000;
 }
 body::selection{
     background-color: #333;
