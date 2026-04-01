@@ -74,6 +74,7 @@ body::selection{
     animation: title-scroll linear both;
     animation-timeline: view(block);
     animation-range: cover 50% cover 100%;
+    transition: width 1s;
 }
 .title__background{
     background-image: url(archives/yonkagor_sunfish.jpg);
