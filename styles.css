@@ -402,7 +402,7 @@ h1{
 /* ------- header end ------- */
 .provisional{
     position: relative;
-    top: 100dvh;
+    top: 100vh;
     height: 200vh;
     background-color: var(--bg-color);
     z-index: 100;
