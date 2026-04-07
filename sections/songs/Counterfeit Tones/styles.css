@@ -1,0 +1,287 @@
+:root{
+    --border-radius: 5px;
+}
+body{
+    background-color: #000000;
+    font-family: "Roboto", sans-serif;
+    position: relative;
+}
+.material-symbols-outlined {
+    user-select: none;
+}
+h2, body, h1, p{
+    margin: 0;
+    padding: 0;
+}
+body::selection{
+    background-color: #333;
+    color: #eee;
+}
+.Principal-1{
+    height: 100dvh;
+    /* background-color: #000000; */
+    padding: 30px;
+    width: min(100% , 1100px);
+    box-sizing: border-box;
+    margin: auto;
+    overflow: hidden;
+}
+.Principal-1 div{
+    /* outline: 1px solid #fff; */
+}
+.background-conteiner{
+    position: absolute;
+    overflow: hidden;
+    width: 100%;
+    height: 600vh;
+    z-index: -1 !important;
+}
+.background{
+    background-image: url(archives/background_niko.png);
+    filter: brightness(.8);
+    width: 100%;
+    height: 600vh;
+    background-size: contain;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-origin: border-box;
+    z-index: -2 !important;
+    position: absolute;
+    top: 0;
+    pointer-events: none;
+    transform: translate(-50%, -50%); 
+    transform: translateX(0px);
+    transform: translateY(0px);
+}
+.triangle1{
+    clip-path: polygon(100% 0, 0 100%, 100% 100%);
+    background-color: #0000001a;
+    height: 150vh;
+    top: 50vh;
+    position: relative;
+    backdrop-filter: blur(3px);
+}
+.principal__title{
+    display: grid;
+    position: relative;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: 2rem 2rem 1fr;
+    column-gap: 20px;
+}
+.principal__title div{
+    display: flex;
+    align-items: center;
+}
+.principal__title--cover{
+    width: 200px;
+    height: 200px;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: -1;
+    user-select: none;
+    filter: grayscale(.3);
+}
+.principal__title--h1{
+    font-size: 2.3rem;
+    font-optical-sizing: auto;
+    font-weight: 450;
+    font-style: normal;
+}
+.principal__title--year{
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-size: 1.4rem;
+    position: relative;
+    top: 0;
+    margin-left: 10px;
+    color: #0008;
+}
+.principal__title--yonkagor{
+    font-weight: 900;
+    font-size: 1.7rem;
+    color: #0007;
+}
+.box--niko{
+    background-color: #8d8d8d93;
+    backdrop-filter: blur(5px) invert(1);
+    border-radius: var(--border-radius);
+    margin-top: 10px;
+    width: calc(100% - 90px);
+    color: #fffa;
+    position: relative;
+    display: flex;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #0000;
+    transition: border-color 1s;
+}
+.box--niko:hover{
+    border-color: #fff8;
+}
+.box--niko:hover::before{
+    opacity: 1;
+}
+.box--niko::before{
+    background: radial-gradient(800px circle at var(--mouse-x) var(--mouse-y), #00000027 , transparent 40%);
+    border-radius: inherit;
+    content: "";
+    height: 100%;
+    left: 0px;
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    z-index: 2;
+    opacity: 0;
+    transition: 1s opacity linear;
+}
+.box--niko::selection{
+    background-color: #eee;
+    color: #333;
+}
+.box--niko p{
+    padding: 0 20px;
+    z-index: 3;
+    color: #fffd;
+    /* display: none; */
+}
+.principal__title--buttons{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+}
+.principal__title--buttons :last-child{
+    padding: 17px;
+    background-color: #d9d9d9;
+    font-variation-settings: 'FILL' 1;
+    font-size: 30px;
+    border-radius: var(--border-radius);
+    transition: background-color .3s;
+}
+.principal__title--buttons :first-child{
+    margin-bottom: 10px;
+    color: #fff;
+    mix-blend-mode: difference;
+}
+.principal__title--buttons :last-child:hover{
+    background-color: #cacaca;;
+}
+.principal__Lyrics{
+    margin-top: 20px;
+    display: grid;
+}
+.principal__Lyrics--sectionT{
+    display: flex;
+    align-items: end;
+}
+.principal__Lyrics--text{
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 31px;
+    line-height: 38px;
+    color: #000000;
+    opacity: 0.69;
+}
+.principal__Lyrics--sectionL{
+    display: grid;
+    margin-top: 20px;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr;
+    column-gap: 20px;
+    align-items: end;
+    justify-items: end;
+}
+.principal__Lyrics--divider{
+    height: 1px;
+    width: 100%;
+    background-color: #00000025;
+    margin-bottom: 10px;
+    margin: 0 0 10px 15px;
+}
+.principal__Lyrics--sectionL > div > p{
+    white-space: nowrap;
+    overflow: hidden; 
+    text-overflow: ellipsis;
+    height: 300px;
+    font-weight: 800;
+    font-size: 1.3rem;
+    /* line-height: 38px; */
+    color: #000a;
+}
+.principal__Lyrics--sectionLyonkat{
+    margin: 0;
+    width: 100%;
+    width: min(100% , 500px);
+    height: 220px;
+    background-color: #ffffff6c;
+    backdrop-filter: blur(7px);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+.principal__Lyrics--sectionLyonkat::selection{
+    background-color: #3339;
+    color: #eee9;
+}
+.principal__Lyrics--sectionLyonkat > div > img{
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 10px;
+    margin-right: 10px;
+    border-radius: var(--border-radius);
+    z-index: 3;
+}
+.principal__Lyrics--sectionLyonkat > h2{
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+    font-weight: 900;
+    font-size: 1.25em;
+    color: #000000;
+    opacity: 0.76;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 3;
+}
+.principal__Lyrics--sectionLyonkat h3{
+    position: absolute;
+    top: 10px;
+    left: 108px;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14.25px;
+    line-height: 17px;
+    color: #000000;
+    opacity: 0.27;
+    z-index: 3;
+}
+.principal__Lyrics--sectionLyonkat p{
+    padding: 0;
+    position: absolute;
+    font-family: 'Roboto' , sans-serif;
+    font-style: normal;
+    font-weight: 300 !important;
+    font-size: .9em !important;
+    color: #000000b1;
+    z-index: 3;
+    top: 50px;
+    left: 20px;
+    width: calc(100% - 260px);
+    height: 80%;
+    white-space: initial !important;
+    overflow: initial !important; 
+    text-overflow: initial !important;
+}
+.principal__Lyrics--sectionLyonkat::before{
+    z-index: 2;
+}
