@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,7 +17,7 @@
     </div>
     <section class="Principal-1">
         <div class="principal__title">
-            <img class="principal__title--cover" src="archives/images/cover.jpg" alt="xd">
+            <img class="principal__title--cover" src="archives/cover.jpg" alt="xd">
             <div>
                 <h1 class="principal__title--h1">Counterfeit Tones</h1>
                 <p class="principal__title--year">2017</p>
@@ -26,17 +26,17 @@
                 <h2 class="principal__title--yonkagor">Yonkagor</h2>
             </div>
             <div class="box--niko">
-                <div><p>Counterfeit tones es una cancion descartada por yonkagor, nunca tuvo un lanzamiento oficial en su canal principal de youtube, su unica publicacion fue en sonundclud y se encuentra actualmente eliminada</p></div>
+                <div><p data-i18n="principalDescription">Counterfeit tones es una cancion descartada por yonkagor, nunca tuvo un lanzamiento oficial en su canal principal de youtube, su unica publicacion fue en sonundclud y se encuentra actualmente eliminada</p></div>
             </div>
             <div class="principal__title--buttons">
                 <span class="material-symbols-outlined">download</span>
                 <span class="material-symbols-outlined">play_arrow</span>
             </div>
         </div>
-        <div class="principal__Lyrics">
-            <div class="principal__Lyrics--sectionT">
-                <p class="principal__Lyrics--text">Lyrics</p>
-                <span class="principal__Lyrics--divider"></span>
+        <div>
+            <div class="divider">
+                <p data-i18n="textLyrics">Lyrics</p>
+                <span></span>
             </div>
         </div>
         <div class="principal__Lyrics--sectionL">
@@ -72,16 +72,56 @@
                 I can't rewind <br>
                 </p>
             </div>
-            <div class="box--niko principal__Lyrics--sectionLyonkat">
+            <div class="box--niko box--niko2">
                 <div><img src="archives/yonkat.png" alt=""></div>
-                <h2>Unknown</h2>
+                <h2 data-i18n="text-Unknown">Unknown</h2>
                 <h3>Yonkat</h3>
-                <p>Sin nombre oficial <br>A diferencia de los otros yonkats este nunca fue nombrado oficialmente</p>
+                <p data-i18n="yonkatDescription">Sin nombre oficial <br>A diferencia de los otros yonkats este nunca fue nombrado oficialmente</p>
+            </div>
+        </div>
+        <div class="divider divider2">
+            <p data-i18n="textAbout">About</p>
+            <span></span>
+        </div>
+        <div class="principal__2">
+            <div class="box--niko principal__2--about">
+                <ul>
+                    <li data-i18n="listElement1">Counterfeit tones nunca tuvo un lanzamiento oficial en su canal principal de youtube </li><br>
+                    <li data-i18n="listElement2">Originalmente fue publicada en su cuenta de sonundcloud (bajo el antiguo nombre de usuario melodyline14), fue rescatada por varios canales en youtube aunque la mayoria se encuentran aliminados</li><br>
+                    <li data-i18n="listElement3">Esta cancion fue publicada cuando su nombre era JonKagor y no Yonkagor</li><br>
+                    <li>
+                        <span data-i18n="listElement41">esta cancion forma parte de varias canciones descartadas como</span>
+                        <a href="#">"Unscripted Play"</a>
+                        , 
+                        <a href="#">"Tell Me"</a>
+                        , 
+                        <a href="#">"Cherries and Wine"</a>
+                        <span data-i18n="listElement42">y</span>
+                        <a href="#">"I Stay The Same"</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="principal__2--about2 box--niko box--niko2">
+                <div class="principal__2--divider">
+                    <div><p>uwu</p></div>
+                    <div></div>
+                </div>
+            </div>
+            <div>
+                <video controls class="principal__2--video" controls preload="none" poster="archives/Video_frame.png">
+                <source src="https://cnuuyy.space/files/dumps/music_archive/YonKaGor/Video/MV_s/Counterfeit%20Tones/compressed.mp4" type="video/mp4">
+                Tu navegador no soporta videos.
+                </video>
             </div>
         </div>
     </section>
-    <div class="box--niko">
+    <div class="box--niko provisional">
         continuo mañana uwu :3 meaw
+        <select id="language-selector">
+            <option value="en">English</option>
+            <option value="es">Español</option>
+            <option value="ru">Русский</option>
+        </select>
     </div>
     <script src="code.js"></script>
 </body>
